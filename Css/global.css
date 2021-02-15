@@ -1,0 +1,112 @@
+/* global style */
+:root {
+  --main-color: #24caac;
+  --color-1: #eaa023;
+  --color-2: #e91e63;
+  /* --dark-800: #ffffff; */
+  --dark-800: #24292d; /* (original) */
+  /* --dark-700: #e9e9e9; */
+  --dark-700: #2f363e; /* (original) */
+  /* --white-900: #000000; */
+  --white-900: #ffffff; /* (original) */
+  --white-800: rgba(255, 255, 255, 0.8);
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 300;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.h-100 {
+  min-height: 100vh;
+}
+.align-content-center {
+  align-content: center;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.btn-1 {
+  background-color: var(--main-color);
+  color: var(--white-900);
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+  background-color: transparent;
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+.sec-padding {
+  padding: 80px 0;
+}
+.section-title {
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  color: var(--white-900);
+  font-weight: 600;
+}
+.section-title h2 span {
+  position: relative;
+}
+.section-title h2 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform: skewY(-3deg);
+}
+p {
+  font-size: 16px;
+  color: var(--white-900);
+}
+
+
