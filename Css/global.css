@@ -62,6 +62,9 @@ img {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn-1 {
   background-color: var(--main-color);
@@ -108,5 +111,25 @@ p {
   font-size: 16px;
   color: var(--white-900);
 }
-
-
+.form-control{
+  height: 45px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  border-radius: 30px;
+  background-color: var(--dark-800);
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-family: inherit;
+  /* text-transform: capitalize; */
+  color: var(--white-900);
+  font-weight: 300;
+  transition: all 0.5s ease;
+}
+.form-control::placeholder{
+  color: var(--white-800);
+}
+.form-control:focus{
+  border-color: var(--main-color);
+}
